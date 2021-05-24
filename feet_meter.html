@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Meter
+<input type="number" id="a"><br>
+foot
+<input type="number" id="b">
+<br>
+<button><input type="button" onclick="change0()" value="Chuyểnsangfeet"></button>
+<button><input type="button" onclick="change1()" value="Chuyểnsangmeter"></button>
+<script>
+
+    function change0(){
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        document.getElementById("c").innerHTML += 3.279 * a ;
+    }
+    function change1() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        document.getElementById("c").innerHTML += 0.305 * b;
+    }
+</script>
+<p id ="c">Result : </p>
+
+</body>
+</html>
